@@ -2,6 +2,14 @@
 
 A web-native workpaper that proves a return is right. It shows where every number came from, what was done to it, who checked it and what is still open. It is not built as a spreadsheet.
 
+| Deliverable | Where |
+|---|---|
+| 1. Working web app (role switcher, saves everything) | `app/` (FastAPI) + `static/` (HTML/JS). Deploy steps below |
+| 2. One page on the core idea and data model | [`docs/CORE_IDEA.md`](docs/CORE_IDEA.md) |
+| 3. Errors found and how the design surfaced them | [`docs/ERRORS_FOUND.md`](docs/ERRORS_FOUND.md) |
+| 4. Video walkthrough | link in the submission email ([`docs/VIDEO_SCRIPT.md`](docs/VIDEO_SCRIPT.md) is the outline) |
+| Decisions and tradeoffs | [`DECISIONS.md`](DECISIONS.md) |
+| How AI was used | [`docs/AI_USAGE.md`](docs/AI_USAGE.md) |
 
 ## Run locally (2 minutes)
 
