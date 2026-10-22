@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Miraflores Workpaper</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <span class="logo">◆</span>
+    <div><div class="b1">Miraflores workpaper</div><div class="b2" id="clientline">Loading…</div></div>
+  </div>
+  <div class="stage" id="stage"></div>
+  <form class="search" id="searchform" autocomplete="off">
+    <input id="q" placeholder="Search lines, documents, amounts, findings…  (e.g. 12400, Halvorsen, SchC.1)">
+  </form>
+  <label class="asof" title="Replay the season: the packet's timeline and agency records are shown as of this date">
+    <span>As of</span><input type="date" id="asof">
+  </label>
+  <label class="who"><span>Acting as</span><select id="who"></select></label>
+</header>
+<div class="shell">
+  <nav class="side" id="nav"></nav>
+  <main id="main"><div class="loading">Loading the packet…</div></main>
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-head"><button class="x" id="drawer-close" title="Close">✕</button><div id="drawer-crumbs"></div></div>
+    <div id="drawer-body"></div>
+  </aside>
+</div>
+<div id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

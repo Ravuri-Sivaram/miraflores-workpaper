@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: miraflores-workpaper
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /healthz
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.7
+      - key: DATABASE_URL
+        sync: false        # paste your Neon / Supabase Postgres URL in the Render dashboard
+      - key: ANTHROPIC_API_KEY
+        sync: false        # optional - AI explanations switch on when set
+      - key: LLM_MODEL
+        value: claude-sonnet-5-5
